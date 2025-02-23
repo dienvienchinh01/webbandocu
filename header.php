@@ -8,7 +8,7 @@ $user_id = @$_SESSION['user_id'] ?? 1;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TeeLab</title>
+    <title>Nga Tuấn</title>
 
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -91,7 +91,7 @@ $user_id = @$_SESSION['user_id'] ?? 1;
 
         global $message;
 
-        if (isset($message)) { // hiển thị thông báo sau khi thao tác với biến message được gán giá trị
+        if (isset($message) && is_array($message)) { // hiển thị thông báo sau khi thao tác với biến message được gán giá trị
             foreach ($message as $msg) {
                 echo '
        <div class=" alert alert-info alert-dismissible fade show" role="alert">
@@ -102,7 +102,7 @@ $user_id = @$_SESSION['user_id'] ?? 1;
         }
         ?>
         <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
-            <p class="font-rale font-size-12 text-black-50 m-0">TeeLab - 0763651041 - Việt Nam</p>
+            <p class="font-rale font-size-12 text-black-50 m-0">Nga Tuấn - 0763651041 - Bắc Ninh - Việt Nam</p>
             <?php if ($user_id && $user_id != 1) { ?>
                 <div class="user-dropdown" style="position: relative; display: inline-block;">
                     <i class="fas fa-user-circle" style="font-size: 30px; cursor: pointer;" id="userIcon"></i>
@@ -125,7 +125,7 @@ $user_id = @$_SESSION['user_id'] ?? 1;
         <!-- Primary Navigation -->
         <nav style=" background: #d83131;" class="navbar navbar-expand-lg navbar-dark color-header-bg">
             <a class="navbar-brand" href="./index.php">
-                <img width="120" src="./assets/logo_tl.webp" alt="logo" class="logo">
+                <img width="70" src="./assets/logo_nt.png" alt="logo" class="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -154,6 +154,9 @@ $user_id = @$_SESSION['user_id'] ?? 1;
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="./order.php">Đơn hàng</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./personal.php">Hồ sơ cá nhân</a>
                     </li>
                 </ul>
                 <form method="get" action="./search.php" class="">

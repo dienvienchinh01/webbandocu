@@ -21,7 +21,7 @@ $selectProducts = mysqli_fetch_all($select_product, MYSQLI_ASSOC);
         <!-- owl carousel -->
         <div class="owl-carousel owl-theme">
             <?php foreach ($selectProducts as $item) { ?>
-                <div class="item py-2 bg-light">
+                <div class="item py-2 bg-light ml-2">
                     <div class="product font-rale">
                         <a href="<?php printf('%s?item_id=%s', 'product.php',  $item['item_id']); ?>"><img src="./assets/products/<?php echo $item['item_image'] ?? "./assets/products/1.png"; ?>" alt="product1" class="img-fluid"></a>
                         <div class="text-center">
