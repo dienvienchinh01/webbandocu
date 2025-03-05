@@ -14,7 +14,7 @@
 
    <div class="sidebar" style="background-color: #667791;">
       <div class="logo">
-         <img src="../assets/logo_nt.png" alt="Logo" width="100">
+         <img src="../assets/piano-logo.png" alt="Logo" width="160">
       </div>
       <a style="margin-bottom: 5px;" href="admin_products.php">
          <i class="menu-icon fa fa-box"></i> Sản phẩm

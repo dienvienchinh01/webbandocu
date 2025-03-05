@@ -6,7 +6,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-2 col-12">
-                <img width="100" src="./assets/logo_nt.png" alt="logo" class="logo">
+                <img width="150" src="./assets/piano-logo.png" alt="logo" class="logo">
             </div>
             <div class="col-lg-4 col-12">
                 <h4 class="font-rubik font-size-20">About</h4>

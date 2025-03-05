@@ -1,3 +1,3 @@
 <?php
-    $conn = mysqli_connect('localhost','root','','webbandogiadung') or die('connection failed');
+    $conn = mysqli_connect('localhost','root','','webbandanpiano') or die('connection failed');
 ?>
