@@ -12,7 +12,7 @@
                 <h4 class="font-rubik font-size-20">About</h4>
                 <div class="d-flex flex-column flex-wrap">
                     <p class="font-size-14 font-rale text-white-50">
-                        Nga Tuấn thành lập năm 2025. Chúng tôi là cửa hàng bán đồ gia dụng uy tín tại Việt Nam , chuyên cung cấp các sản phẩm quần áo đẹp, chất lượng, giá rẻ nhất thị trường.
+                        Hieu Piano thành lập năm 2025. Chúng tôi là cửa hàng bán đàn piano uy tín tại Việt Nam , chuyên cung cấp các sản phẩm đàn piano đẹp, chất lượng, giá rẻ nhất thị trường.
                     </p>
                 </div>
 
@@ -35,7 +35,7 @@
     </div>
 </footer>
 <div class="copyright text-center bg-dark text-white py-2">
-    <p class="font-rale font-size-14">&copy; Copyrights 2025. Desing By <span class="color-second">Nga Tuấn</span></p>
+    <p class="font-rale font-size-14">&copy; Copyrights 2025. Desing By <span class="color-second">Hieu Piano</span></p>
 </div>
 <!-- !start #footer -->
 
