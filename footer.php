@@ -6,13 +6,13 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-2 col-12">
-                <img width="150" src="./assets/logo-mobile.png" alt="logo" class="logo">
+                <img width="150" src="./assets/logo-nh.png" alt="logo" class="logo">
             </div>
             <div class="col-lg-4 col-12">
                 <h4 class="font-rubik font-size-20">About</h4>
                 <div class="d-flex flex-column flex-wrap">
                     <p class="font-size-14 font-rale text-white-50">
-                        Chien Hai thành lập năm 2025. Chúng tôi là cửa hàng bán điện thoại uy tín tại Việt Nam , chuyên cung cấp các sản phẩm điện thoại đẹp, chất lượng, giá rẻ nhất thị trường.
+                        Shop Nuoc Hoa thành lập năm 2025. Chúng tôi là cửa hàng bán nước hoa uy tín tại Việt Nam , chuyên cung cấp các sản phẩm nước hoa đẹp, chất lượng, giá rẻ nhất thị trường.
                     </p>
                 </div>
 
@@ -35,7 +35,7 @@
     </div>
 </footer>
 <div class="copyright text-center bg-dark text-white py-2">
-    <p class="font-rale font-size-14">&copy; Copyrights 2025. Desing By <span class="color-second">Chien Hai</span></p>
+    <p class="font-rale font-size-14">&copy; Copyrights 2025. Desing By <span class="color-second">Shop Nuoc Hoa</span></p>
 </div>
 <!-- !start #footer -->
 
