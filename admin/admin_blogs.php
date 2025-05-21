@@ -111,7 +111,11 @@ if (isset($_POST['update_blog'])) {
                 <h1 class="mb-0">Quản lý Blog</h1>
             </div>
             <section class="add-products mb-4">
-                <form action="" method="post" enctype="multipart/form-data">
+                <!-- Thêm button hiển thị form -->
+                <button type="button" id="showAddBlogForm" style="width: fit-content;" class="btn btn-primary mb-3">Thêm blog mới</button>
+
+                <!-- Form thêm blog (mặc định ẩn) -->
+                <form action="" method="post" enctype="multipart/form-data" id="addBlogForm" style="display: none;">
                     <h3>Thêm blog mới</h3>
                     <div class="mb-3">
                         <input type="text" name="title" class="form-control" placeholder="Tiêu đề blog" required>
@@ -122,9 +126,35 @@ if (isset($_POST['update_blog'])) {
                     <div class="mb-3">
                         <input type="file" name="image" class="form-control" accept="image/*" required>
                     </div>
-                    <button type="submit" name="add_blog" class="btn btn-primary">Thêm blog</button>
+                    <div class="mb-3">
+                        <button type="submit" style="width: fit-content;" name="add_blog" class="btn btn-primary">Thêm blog</button>
+                        <button type="button" style="width: fit-content;" class="btn btn-secondary" id="cancelAddBlog">Hủy</button>
+                    </div>
                 </form>
             </section>
+
+            <!-- Thêm đoạn JavaScript để xử lý ẩn/hiện form -->
+            <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const showAddBlogForm = document.getElementById('showAddBlogForm');
+                const addBlogForm = document.getElementById('addBlogForm');
+                const cancelAddBlog = document.getElementById('cancelAddBlog');
+
+                // Xử lý hiện form khi click nút thêm mới
+                showAddBlogForm.addEventListener('click', function() {
+                    addBlogForm.style.display = 'block';
+                    showAddBlogForm.style.display = 'none';
+                });
+
+                // Xử lý ẩn form khi click nút hủy
+                cancelAddBlog.addEventListener('click', function() {
+                    addBlogForm.style.display = 'none';
+                    showAddBlogForm.style.display = 'block';
+                    // Reset form
+                    addBlogForm.reset();
+                });
+            });
+            </script>
 
             <section class="show-blogs">
                 <div class="container">

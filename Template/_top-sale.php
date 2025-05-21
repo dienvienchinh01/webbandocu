@@ -2,12 +2,17 @@
 <?php
 $user_id = @$_SESSION['user_id'] ?? 1;
     // Thêm vào giỏ
-    if($_SERVER['REQUEST_METHOD'] == "POST"){
-        if (isset($_POST['top_sale_submit'])){
+   if($_SERVER['REQUEST_METHOD'] == "POST"){
+    if (isset($_POST['top_sale_submit'])){
+
+        if ($user_id == 1) {
+            header('Location: login.php');
+        } else {
             // call method addToCart
             $Cart->addToCart($_POST['user_id'], $_POST['item_id']);
         }
     }
+}
     $select_product =  mysqli_query($conn, "SELECT * FROM `products` limit 10") or die('Query failed');
     $selectProducts = mysqli_fetch_all($select_product, MYSQLI_ASSOC);
 

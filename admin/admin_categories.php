@@ -87,14 +87,44 @@ if (isset($_POST['update_category'])) {
 
             <!-- Thêm danh mục mới -->
             <section class="add-products mb-4">
-                <form action="" method="post">
+                <!-- Thêm button hiển thị form -->
+                <button type="button" id="showAddCategoryForm" style="width: fit-content;" class="btn btn-primary mb-3">Thêm danh mục mới</button>
+
+                <!-- Form thêm danh mục (mặc định ẩn) -->
+                <form action="" method="post" id="addCategoryForm" style="display: none;">
                     <h3>Thêm danh mục mới</h3>
                     <div class="mb-3">
                         <input type="text" name="category_name" class="form-control" placeholder="Tên danh mục" required>
                     </div>
-                    <button type="submit" name="add_category" class="btn btn-primary">Thêm danh mục</button>
+                    <div class="mb-3">
+                        <button type="submit" style="width: fit-content;" name="add_category" class="btn btn-primary">Thêm danh mục</button>
+                        <button type="button" style="width: fit-content;" class="btn btn-secondary" id="cancelAddCategory">Hủy</button>
+                    </div>
                 </form>
             </section>
+
+            <!-- Thêm đoạn JavaScript để xử lý ẩn/hiện form -->
+            <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                const showAddCategoryForm = document.getElementById('showAddCategoryForm');
+                const addCategoryForm = document.getElementById('addCategoryForm');
+                const cancelAddCategory = document.getElementById('cancelAddCategory');
+
+                // Xử lý hiện form khi click nút thêm mới
+                showAddCategoryForm.addEventListener('click', function() {
+                    addCategoryForm.style.display = 'block';
+                    showAddCategoryForm.style.display = 'none';
+                });
+
+                // Xử lý ẩn form khi click nút hủy
+                cancelAddCategory.addEventListener('click', function() {
+                    addCategoryForm.style.display = 'none';
+                    showAddCategoryForm.style.display = 'block';
+                    // Reset form
+                    addCategoryForm.reset();
+                });
+            });
+            </script>
 
             <!-- Hiển thị danh sách danh mục -->
             <section class="show-categories">

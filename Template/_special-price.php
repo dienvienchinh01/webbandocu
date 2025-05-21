@@ -2,11 +2,14 @@
 <?php
 $user_id = $_SESSION['user_id'] ?? 1;
 
-// request method post
 if($_SERVER['REQUEST_METHOD'] == "POST"){
     if (isset($_POST['special_price_submit'])){
-        // call method addToCart
-        $Cart->addToCart($_POST['user_id'], $_POST['item_id']);
+        if ($user_id == 1) {
+            header('Location: login.php');
+        } else {
+            // call method addToCart
+            $Cart->addToCart($_POST['user_id'], $_POST['item_id']);
+        }
     }
 }
 
@@ -23,7 +26,7 @@ $selectProducts = mysqli_fetch_all($select_product, MYSQLI_ASSOC);
             <div class="grid-item border <?php echo $item['item_brand'] ?? "Brand" ; ?>">
                 <div class="item py-2" style="width: 200px;">
                     <div class="product font-rale">
-                        <a href="<?php printf('%s?item_id=%s', 'product.php',  $item['item_id']); ?>"><img src="./assets/products/<?php echo $item['item_image'] ?? "./assets/products/13.png"; ?>" alt="product1" class="img-fluid"></a>
+                        <a href="<?php printf('%s?item_id=%s', 'product.php',  $item['item_id']); ?>"><img src="./assets/products/<?php echo $item['item_image'] ?? "./assets/products/13.png"; ?>" alt="product1" style="width: 100%; height: 200px; object-fit: cover;"></a>
                         <div class="text-center">
                             <h6 style="height: 39px;"><?php echo $item['item_name'] ?? "Unknown"; ?></h6>
                             <!-- <div class="rating text-warning font-size-12">

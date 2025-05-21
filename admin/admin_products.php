@@ -142,7 +142,11 @@ $total_pages = ceil($total_products / $limit);
                 <h1 class="mb-0">Quản Lý Sản Phẩm</h1>
             </div>
             <section class="add-products mb-4">
-                <form action="" method="post" enctype="multipart/form-data">
+                <!-- Thêm button hiển thị form -->
+                <button type="button" id="showAddForm" style="width: fit-content;" class="btn btn-primary mb-3">Thêm sản phẩm mới</button>
+
+                <!-- Form thêm sản phẩm (mặc định ẩn) -->
+                <form action="" method="post" enctype="multipart/form-data" id="addProductForm" style="display: none;">
                     <h3>Thêm sản phẩm mới</h3>
                     <div class="mb-3">
                         <input type="text" name="item_name" class="form-control" placeholder="Tên sản phẩm" required>
@@ -169,7 +173,10 @@ $total_pages = ceil($total_products / $limit);
                     <div class="mb-3">
                         <input type="file" name="item_image" class="form-control" accept="image/*" required>
                     </div>
-                    <button type="submit" name="add_product" class="btn btn-primary">Thêm sản phẩm</button>
+                    <div class="mb-3">
+                        <button type="submit" style="width: fit-content;" name="add_product" class="btn btn-primary">Thêm sản phẩm</button>
+                        <button type="button" style="width: fit-content;" class="btn btn-secondary" id="cancelAdd">Hủy</button>
+                    </div>
                 </form>
             </section>
 
@@ -272,6 +279,27 @@ $total_pages = ceil($total_products / $limit);
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const showAddForm = document.getElementById('showAddForm');
+        const addProductForm = document.getElementById('addProductForm');
+        const cancelAdd = document.getElementById('cancelAdd');
+
+        // Xử lý hiện form khi click nút thêm mới
+        showAddForm.addEventListener('click', function() {
+            addProductForm.style.display = 'block';
+            showAddForm.style.display = 'none';
+        });
+
+        // Xử lý ẩn form khi click nút hủy
+        cancelAdd.addEventListener('click', function() {
+            addProductForm.style.display = 'none';
+            showAddForm.style.display = 'block';
+            // Reset form
+            addProductForm.reset();
+        });
+    });
+    </script>
 </body>
 
 </html>
