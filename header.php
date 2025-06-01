@@ -8,7 +8,7 @@ $user_id = @$_SESSION['user_id'] ?? 1;
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GS Shop</title>
+    <title>Pav LapTop</title>
 
     <!-- Bootstrap CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -102,7 +102,7 @@ $user_id = @$_SESSION['user_id'] ?? 1;
         }
         ?>
         <div class="strip d-flex justify-content-between px-4 py-1 bg-light">
-            <p class="font-rale font-size-12 text-black-50 m-0">GS Shop - 0763651041 - Việt Nam</p>
+            <p class="font-rale font-size-12 text-black-50 m-0">Pav LapTop - 0763651041 - Việt Nam</p>
             <?php if ($user_id && $user_id != 1) { ?>
                 <div class="user-dropdown" style="position: relative; display: inline-block;">
                     <i class="fas fa-user-circle" style="font-size: 30px; cursor: pointer;" id="userIcon"></i>
@@ -123,9 +123,9 @@ $user_id = @$_SESSION['user_id'] ?? 1;
         </div>
 
         <!-- Primary Navigation -->
-        <nav style=" background: #d83131;" class="navbar navbar-expand-lg navbar-dark color-header-bg">
+        <nav style=" background: #2b69c6;" class="navbar navbar-expand-lg navbar-dark color-header-bg">
             <a class="navbar-brand" href="./index.php">
-                <img width="60" src="./assets/logo-gs.png" alt="logo" class="logo">
+                <img width="80" src="./assets/lap-logo.png" alt="logo" class="logo">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">

@@ -6,13 +6,13 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-2 col-12">
-                <img width="100" src="./assets/logo-gs.png" alt="logo" class="logo">
+                <img width="100" src="./assets/lap-logo.png" alt="logo" class="logo">
             </div>
             <div class="col-lg-4 col-12">
                 <h4 class="font-rubik font-size-20">About</h4>
                 <div class="d-flex flex-column flex-wrap">
                     <p class="font-size-14 font-rale text-white-50">
-                        GS Shop thành lập năm 2025. Chúng tôi là cửa hàng bán đồ gốm sứ uy tín tại Việt Nam , chuyên cung cấp các sản phẩm gốm sứ đẹp, chất lượng, giá rẻ nhất thị trường.
+                        Pav LapTop thành lập năm 2025. Chúng tôi là cửa hàng bán máy tính uy tín tại Việt Nam , chuyên cung cấp các sản phẩm máy tính đẹp, chất lượng, giá rẻ nhất thị trường.
                     </p>
                 </div>
 
@@ -35,7 +35,7 @@
     </div>
 </footer>
 <div class="copyright text-center bg-dark text-white py-2">
-    <p class="font-rale font-size-14">&copy; Copyrights 2025. Desing By <span class="color-second">GS Shop</span></p>
+    <p class="font-rale font-size-14">&copy; Copyrights 2025. Desing By <span class="color-second"> Pav LapTop</span></p>
 </div>
 <!-- !start #footer -->
 
