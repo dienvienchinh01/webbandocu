@@ -14,7 +14,7 @@
 
    <div class="sidebar" style="background-color: #667791;">
       <div class="logo">
-         <img src="../assets/lap-logo.png" alt="Logo" width="80">
+         <img src="../assets/logo-hhna.png" alt="Logo" width="80">
       </div>
       <a style="margin-bottom: 5px;" href="admin_products.php">
          <i class="menu-icon fa fa-box"></i> Sản phẩm
