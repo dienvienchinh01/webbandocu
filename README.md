@@ -47,4 +47,7 @@
 ## +++ THÔNG TIN KHÁC +++
 - Giao diện đơn giản, dễ sử dụng cho cả quản trị viên và người dùng.
 - Mã nguồn mở, có thể tùy chỉnh và nâng cấp dễ dàng.
+- Tài khoản admin : admin@gmail.com
+- Tài khoản người dùng:  user@gmail.com
+- Mật khẩu : 123456
 
